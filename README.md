@@ -38,8 +38,8 @@ monitoring contribution. The evidence does **not** establish:
 - worldwide priority for generic invariant neural networks.
 
 Projection-only and analytic controls are retained because clean-form accuracy
-and representation assurance are separate questions. See
-`SUBMISSION_READINESS.md` and the theorem/collision notes for the precise claim.
+and representation assurance are separate questions. The public tests encode
+the exact quotient, feasible-cotangent, and registered-rewrite contracts.
 
 ## Repository layout
 
@@ -49,7 +49,8 @@ scripts/                         Benchmarks, controls, auditors, and runners
 tests/                           Synthetic theorem and invariance tests
 .github/workflows/tests.yml      Public continuous-integration workflow
 DATA_ACCESS_AND_RELEASE.md       Data authorization and release boundary
-SUBMISSION_READINESS.md          Scientific and external readiness checklist
+CONTRIBUTING.md                  Contribution and contract-preservation rules
+SECURITY.md                      Credential and sensitive-data reporting policy
 release_manifest.json            Generated SHA-256 allowlist for this release
 ```
 
