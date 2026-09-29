@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+official_jao_dual_measure/
+official_entsoe_nordic_day_ahead/
+results/
+**/*.pt
+**/*.npz
+**/*.log

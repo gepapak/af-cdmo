@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper and this software release."
+title: "AF-CDMO: Representation-Safe Learning from Flow-Based Market Certificates"
+type: software
+authors:
+  - family-names: "Papakonstantinou"
+    given-names: "Georgios"
+  - family-names: "Liu"
+    given-names: "Xiufeng"
+version: 0.1.0
+date-released: 2026-09-29
+license: Apache-2.0
+abstract: >-
+  Research software for learning representation-safe feasible cotangent
+  representatives from solved Nordic flow-based market certificates under
+  registered economically equivalent certificate rewrites.
+keywords:
+  - electricity markets
+  - flow-based market coupling
+  - representation invariance
+  - market monitoring
+  - machine learning

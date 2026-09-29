@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "af-cdmo-research"
+version = "0.1.0"
+description = "Representation-safe learning for solved Nordic flow-based market certificates"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = "Apache-2.0"
+keywords = [
+  "electricity markets",
+  "flow-based market coupling",
+  "representation invariance",
+  "machine learning",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3.10",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "joblib==1.5.2",
+  "numpy==1.26.4",
+  "pandas==2.3.2",
+  "requests==2.32.5",
+  "scikit-learn==1.7.2",
+  "scipy==1.15.3",
+  "torch==2.8.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.3,<9"]
+
+[tool.setuptools.packages.find]
+include = ["af_cdmo*"]

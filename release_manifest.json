@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-29T10:01:10.557035+00:00",
+  "release_type": "code_only",
+  "raw_market_data_included": false,
+  "trained_weights_included": false,
+  "timestamp_level_derivatives_included": false,
+  "jao_authorization_included": false,
+  "files": [
+    {
+      "path": ".github/workflows/tests.yml",
+      "bytes": 657,
+      "sha256": "ca2767d4d9e48e03a1c17352038e4edb6c27dea23cf06547ccecc2e466d0582a"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 157,
+      "sha256": "013eae38da005e5a00ce9e058d124f6e74d26366faaf058f6ad64cf29c80f509"
+    },
+    {
+      "path": "af_cdmo/__init__.py",
+      "bytes": 1030,
+      "sha256": "2eba02282fd497852772a0bb5ac401305893b0bb2ae76a6b05006d62f8a701e2"
+    },
+    {
+      "path": "af_cdmo/core.py",
+      "bytes": 17725,
+      "sha256": "f65895e50503a4898db644aa592036ea3415b61b36e70205617f463ce78a2eba"
+    },
+    {
+      "path": "af_cdmo/models.py",
+      "bytes": 6652,
+      "sha256": "76199e60b04604329c80cf6f6d854371c51ed5df3827c3598f4f0f157966631b"
+    },
+    {
+      "path": "AF_CDMO_NOVELTY_AND_EVIDENCE_AUDIT_2026-09-13.md",
+      "bytes": 19896,
+      "sha256": "b9412445db3ec298a5b40d09ea310abc970bb13d48985b06e7f7a0b212c66a9e"
+    },
+    {
+      "path": "AF_CDMO_REAL_EXTENSION_V13_DESIGN.md",
+      "bytes": 6714,
+      "sha256": "d8e6d07684b065b66a69e8c81c41ffaeacb321c99b67fab19fee1e55ca08932c"
+    },
+    {
+      "path": "AF_CDMO_REAL_THEOREM_AND_COLLISION_NOTE_V13.md",
+      "bytes": 11182,
+      "sha256": "bd8d4a35d8b8df77397a53632bcaa2bd00c46541e6d766ad540faf958530d76c"
+    },
+    {
+      "path": "AF_CDMO_THEOREM_NOTE_V12.md",
+      "bytes": 9638,
+      "sha256": "78bfa1f47347bf9f3f12686a51477db8a56e48d421b26f9560eaec8d7c9e0509"
+    },
+    {
+      "path": "AF_CDMO_V14_TEMPR_POSITIONING.md",
+      "bytes": 6145,
+      "sha256": "a1c720fc96803e4518a46057619fab7ff4518857b9ce7e6325e34d9239b13ee4"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 756,
+      "sha256": "c5ec731c1c292abdaad1d71b81680cbddbcfde7c80ad99ace322aef35d411f78"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1255,
+      "sha256": "4e87a455b54588ecd2b228df13d561053f2b756ef92a65f0db2efcf036d27513"
+    },
+    {
+      "path": "DATA_ACCESS_AND_RELEASE.md",
+      "bytes": 3367,
+      "sha256": "a49e6b60b3c64b051a75400f0dc697e602c5082346b59c524a0f35de11917e9c"
+    },
+    {
+      "path": "INDEPENDENT_THEOREM_REVIEW_PACKET.md",
+      "bytes": 2455,
+      "sha256": "b0b008f9811ad5c4e2f353b661867fdd95aababbdebeafff4caf2e5ff2971e9a"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "PAPER2_NOVELTY_CLAIM_SOURCE_LEDGER.md",
+      "bytes": 33659,
+      "sha256": "7dfd52b8cc0f9bb74d42d70238b42af9102b7b705231898e5e9d4c26f40236ef"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 982,
+      "sha256": "67a0c41a4fa3827e994b7b672d3089ddb715bac5bb133841db45df6526a188a4"
+    },
+    {
+      "path": "pytest.ini",
+      "bytes": 85,
+      "sha256": "73aa05480f7822d29fcd75a844db7c33d781d9dd25ad4349b7754c6ba54ffd35"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5080,
+      "sha256": "646c4cffd4b8806fe0bf3571b9e216fa71abae9b2ebc25f53ad901e17fe61023"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 106,
+      "sha256": "c1c8bb9d379f3ffdbb7101ac087e7712f35b3cc8bc5154f7e797f8bd4e7a4aa7"
+    },
+    {
+      "path": "scripts/af_cdmo_real_controls_v14.py",
+      "bytes": 14948,
+      "sha256": "64affd645ad3f639e9d1c2fd6ee605d3b6890186b35aeff6dcc9302473fa0893"
+    },
+    {
+      "path": "scripts/af_cdmo_real_extension_v13.py",
+      "bytes": 16482,
+      "sha256": "7f60f259204c82ea0f68352c892a3f937302acada403ec681f608cf5ea044e01"
+    },
+    {
+      "path": "scripts/analyze_af_cdmo_real_v14_calendar_bootstrap.py",
+      "bytes": 13410,
+      "sha256": "32c208bc6e2dbad5e4f14fbc4b8c11cb98118ce61f91c3afcebba343ece4317c"
+    },
+    {
+      "path": "scripts/audit_af_cdmo_real_geometry_v13.py",
+      "bytes": 14235,
+      "sha256": "a08ecc768c2afa9fa31fca4969f25b086c989d73e0cd64cd0526cd21d83c5899"
+    },
+    {
+      "path": "scripts/audit_af_cdmo_real_v14.py",
+      "bytes": 17417,
+      "sha256": "2ab58358f65ff49db4e2717d7c326c04ff4a125e24319b076cafc22dae072796"
+    },
+    {
+      "path": "scripts/audit_dual_measure_conservation.py",
+      "bytes": 7550,
+      "sha256": "9699c548ae815fd152e3ce669151d75d48e45681f86b9385a47304231b89b267"
+    },
+    {
+      "path": "scripts/benchmark_af_cdmo_real_v13.py",
+      "bytes": 38054,
+      "sha256": "38046e2d813afe1e661fd87ac97183c83d90c80b50a71c2f1a0dc31557de9b7a"
+    },
+    {
+      "path": "scripts/benchmark_af_cdmo_real_v14.py",
+      "bytes": 68076,
+      "sha256": "0b504e5d98703a708fcfd2d8fe8194c18c3bbf1dbb2dcc90ea6e63e9af1b1320"
+    },
+    {
+      "path": "scripts/benchmark_certificate_governance_v5.py",
+      "bytes": 64372,
+      "sha256": "1e8d55f8bf5cc8930c00d8773e5a25ee39bcd4a7da8d1150db99fb8dd25fc412"
+    },
+    {
+      "path": "scripts/benchmark_multizone_factorial_controls_v10.py",
+      "bytes": 25007,
+      "sha256": "0ad410840693160fb880ac691e1c1007a3b879c24805214d88ff14e4f99e696c"
+    },
+    {
+      "path": "scripts/benchmark_multizone_quotient_gauge_v6.py",
+      "bytes": 30961,
+      "sha256": "7d22851e8a9c23184571d225f252fedaa9bb388436d09431f1ed862a6f5e80e4"
+    },
+    {
+      "path": "scripts/build_public_release.py",
+      "bytes": 6837,
+      "sha256": "3bebfbbfbbf67ad4da9a6f50f25078224a6f93c61df0c79cad576c537898cd69"
+    },
+    {
+      "path": "scripts/cqdm_utils.py",
+      "bytes": 4574,
+      "sha256": "0aa58a199ce33d734f35f2bc089a285b8452dda183495294a63b308eee9459c1"
+    },
+    {
+      "path": "scripts/multizone_factorial_controls_v10.py",
+      "bytes": 10046,
+      "sha256": "4c2bad0544e26431c8247a21fa258b7b472e791b8b5d445fe7ec7b8acbe05151"
+    },
+    {
+      "path": "scripts/multizone_quotient_gauge_v6.py",
+      "bytes": 12858,
+      "sha256": "cd7c2306f281fee981e18dfffffddc42c0285183dec7309485a1a6dd699a0c77"
+    },
+    {
+      "path": "scripts/run_af_cdmo_real_v14.ps1",
+      "bytes": 3173,
+      "sha256": "e6ba8f64564c0c472ce32d1675e124835e1608feca3ace85aa02f537deec73a6"
+    },
+    {
+      "path": "scripts/slack_qdm_extension_v11.py",
+      "bytes": 15242,
+      "sha256": "9ce4c5964145d3aad252228250257bf60f6ae1ffc6a16365d1914837c92cf56f"
+    },
+    {
+      "path": "scripts/verify_release_manifest.py",
+      "bytes": 2799,
+      "sha256": "f1b28a31fbb58d2b81dc2a275bd78a3c218d4ea1a0b7cf912a5bbd4b8561b1cd"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 886,
+      "sha256": "b0477db306ad6be66e1ae661ee203cfcea14acf7ee23c6e800a869b8e474bb98"
+    },
+    {
+      "path": "SUBMISSION_READINESS.md",
+      "bytes": 3779,
+      "sha256": "de9d48e13b0cdaf2efccf31a031a1ccf8ffeac8ea1c53d475e13287942c4a2a7"
+    },
+    {
+      "path": "tests/test_af_cdmo_extension_v12.py",
+      "bytes": 11143,
+      "sha256": "3815bd1705406068fca8d34cd07f2740ae9bd4c25979df8613333b55c5b756c4"
+    },
+    {
+      "path": "tests/test_af_cdmo_real_calendar_bootstrap_v14.py",
+      "bytes": 2123,
+      "sha256": "d2315455503731b8b43ab2f818bc2249328360ccb92d2148b52c9d9712df5601"
+    },
+    {
+      "path": "tests/test_af_cdmo_real_controls_v14.py",
+      "bytes": 10503,
+      "sha256": "5e109b6fa142f969bedcf0fed9929dcad298c493b8c42cb09f3c93b7bbb49a05"
+    },
+    {
+      "path": "tests/test_af_cdmo_real_extension_v13.py",
+      "bytes": 4560,
+      "sha256": "9fe0135059b863c4ba5424030ba13d25f6d54f3d1bbadd8de4afde6f7481b47e"
+    },
+    {
+      "path": "tests/test_af_cdmo_real_geometry_v13.py",
+      "bytes": 2577,
+      "sha256": "ba1f9419cb715b3b2780d3ddf04f5963fdce2df62d334738c77cac14d5b46b16"
+    },
+    {
+      "path": "tests/test_af_cdmo_theorem_v12.py",
+      "bytes": 5384,
+      "sha256": "3a049d219f4bfb9208ce3227a823daa5a15c1cae7b6710a9afb08daa2bf14230"
+    },
+    {
+      "path": "tests/test_benchmark_af_cdmo_real_v13.py",
+      "bytes": 1164,
+      "sha256": "073adbfe8c74cd70c8d9338645d77250ec135de5651347034c826b4b452a1a59"
+    }
+  ]
+}
