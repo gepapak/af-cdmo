@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "created_at_utc": "2026-09-29T11:13:57.762017+00:00",
+  "created_at_utc": "2026-10-04T22:11:36.167498+00:00",
   "release_type": "code_only",
   "raw_market_data_included": false,
   "trained_weights_included": false,
@@ -9,13 +9,13 @@
   "files": [
     {
       "path": ".github/workflows/tests.yml",
-      "bytes": 657,
-      "sha256": "ca2767d4d9e48e03a1c17352038e4edb6c27dea23cf06547ccecc2e466d0582a"
+      "bytes": 844,
+      "sha256": "3eb370b953d7e59014037e72ef7ad32fa3b3a4845441c2d2ce3e8147e817ca72"
     },
     {
       "path": ".gitignore",
-      "bytes": 157,
-      "sha256": "013eae38da005e5a00ce9e058d124f6e74d26366faaf058f6ad64cf29c80f509"
+      "bytes": 764,
+      "sha256": "8ad397b8641dff91ef0c10754787bbbc00ba9aa690170e3673ae54e9ad9f7a4d"
     },
     {
       "path": "af_cdmo/__init__.py",
@@ -24,8 +24,8 @@
     },
     {
       "path": "af_cdmo/core.py",
-      "bytes": 17725,
-      "sha256": "f65895e50503a4898db644aa592036ea3415b61b36e70205617f463ce78a2eba"
+      "bytes": 20230,
+      "sha256": "9ebdf18daebf9f9755ab637310930b741a1b70096734139fdb719c9d461e6363"
     },
     {
       "path": "af_cdmo/models.py",
@@ -33,19 +33,69 @@
       "sha256": "76199e60b04604329c80cf6f6d854371c51ed5df3827c3598f4f0f157966631b"
     },
     {
+      "path": "af_cdmo_learning_headroom/audit_residual_headroom.py",
+      "bytes": 20936,
+      "sha256": "22ce7bee6b808e9c91f8dcc335bbedaae861c2a327d252bd4db9b06b095b3c39"
+    },
+    {
+      "path": "af_cdmo_learning_headroom/README.md",
+      "bytes": 1198,
+      "sha256": "1d0334d7b38cede5ffc1b5dcbec0551abd707aab267cdbb922da6a38ba601965"
+    },
+    {
+      "path": "af_cdmo_probabilistic_headroom/audit_qct_risk_temporal_robustness_v5.py",
+      "bytes": 56707,
+      "sha256": "28414b966fd0f9eafb25ebbe33e00d9c0ae47e44f12bd5d260f5f0d4a125ef45"
+    },
+    {
+      "path": "af_cdmo_probabilistic_headroom/confirm_quotient_tangent_risk_v5.py",
+      "bytes": 55976,
+      "sha256": "662ec8cb10c813b564e7996d88ac0413b3fb35befcb842290336189feb3e950b"
+    },
+    {
+      "path": "af_cdmo_probabilistic_headroom/QCT_RISK_CONFIRMATION_PROTOCOL_V5.md",
+      "bytes": 4068,
+      "sha256": "a9d538cc07bad5ee461363f969f44c50c2e9d486d98d9ad4a79077a1b68d55ef"
+    },
+    {
+      "path": "af_cdmo_probabilistic_headroom/QCT_RISK_REFINEMENT_INVARIANCE_THEOREM_V5.md",
+      "bytes": 7001,
+      "sha256": "4a48fc5b52eed16d7cbbbe13faebd5e8927a122cbcf3a74f5a0c502f6050f0f3"
+    },
+    {
+      "path": "af_cdmo_probabilistic_headroom/README.md",
+      "bytes": 4366,
+      "sha256": "0e39a30bf6684d2482a3b771d196d99e4f4ff88dc73d25333b3dd0ce1cf17987"
+    },
+    {
+      "path": "af_cdmo_probabilistic_headroom/summarize_qct_risk_confirmation_v5.py",
+      "bytes": 16141,
+      "sha256": "80aa363181f08b9b53732419cd00339698e205ebfdd04d93c2a1276b9e73867a"
+    },
+    {
+      "path": "af_cdmo_probabilistic_headroom/train_quotient_tangent_operator_v3.py",
+      "bytes": 49469,
+      "sha256": "d88d6cb50f476f7646bd0397f20c419ae2332477604d4470f956edf79d81f558"
+    },
+    {
       "path": "CITATION.cff",
-      "bytes": 756,
-      "sha256": "c5ec731c1c292abdaad1d71b81680cbddbcfde7c80ad99ace322aef35d411f78"
+      "bytes": 751,
+      "sha256": "b0834e75d18fd643968a3b96ac14b229685cb306cf038fa8e8676f4121610a17"
     },
     {
       "path": "CONTRIBUTING.md",
-      "bytes": 1255,
-      "sha256": "4e87a455b54588ecd2b228df13d561053f2b756ef92a65f0db2efcf036d27513"
+      "bytes": 1779,
+      "sha256": "e8c3898933b1159ca67df1c1d45804cd12c6e8c2150fa52dac8cfae55cebb15b"
+    },
+    {
+      "path": "CORE_EXTERNAL_GENERALIZATION_PROTOCOL.md",
+      "bytes": 9914,
+      "sha256": "5cdd1a800e72add7c6ee9effcde28236f51a3290a74662b8a6990725f83c9869"
     },
     {
       "path": "DATA_ACCESS_AND_RELEASE.md",
-      "bytes": 3367,
-      "sha256": "a49e6b60b3c64b051a75400f0dc697e602c5082346b59c524a0f35de11917e9c"
+      "bytes": 6043,
+      "sha256": "2e379abd9c03be82fe23263640e3bcc1c00d4503d73c86ef9dad013cb9732222"
     },
     {
       "path": "LICENSE",
@@ -54,8 +104,8 @@
     },
     {
       "path": "pyproject.toml",
-      "bytes": 982,
-      "sha256": "67a0c41a4fa3827e994b7b672d3089ddb715bac5bb133841db45df6526a188a4"
+      "bytes": 919,
+      "sha256": "41fb9c1524f2b59190163e1e8c9ea842541728702a77f43a246c9c8405b548c5"
     },
     {
       "path": "pytest.ini",
@@ -64,8 +114,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5174,
-      "sha256": "83cfb74f3484a97405cf5774133a99bb515672339dc20965427e36bfcddc8bb1"
+      "bytes": 9977,
+      "sha256": "26c036a3525a6b78e338a4c5efe3d53014ca7bf138b343dc8423a93c31c97c91"
     },
     {
       "path": "requirements.txt",
@@ -88,6 +138,11 @@
       "sha256": "32c208bc6e2dbad5e4f14fbc4b8c11cb98118ce61f91c3afcebba343ece4317c"
     },
     {
+      "path": "scripts/audit_af_cdmo_core_geometry.py",
+      "bytes": 11151,
+      "sha256": "3c01ae71946211d2e8ca1276657f198b4c7cb990268adb01c94c87496568be49"
+    },
+    {
       "path": "scripts/audit_af_cdmo_real_geometry_v13.py",
       "bytes": 14235,
       "sha256": "a08ecc768c2afa9fa31fca4969f25b086c989d73e0cd64cd0526cd21d83c5899"
@@ -98,9 +153,19 @@
       "sha256": "2ab58358f65ff49db4e2717d7c326c04ff4a125e24319b076cafc22dae072796"
     },
     {
+      "path": "scripts/audit_core_external_readiness.py",
+      "bytes": 12220,
+      "sha256": "a833ba4dccb59af38ae311f38bc5ff84c4cf3f0734773822657f50915d073fd4"
+    },
+    {
       "path": "scripts/audit_dual_measure_conservation.py",
       "bytes": 7550,
       "sha256": "9699c548ae815fd152e3ce669151d75d48e45681f86b9385a47304231b89b267"
+    },
+    {
+      "path": "scripts/benchmark_af_cdmo_core_external.py",
+      "bytes": 32591,
+      "sha256": "1bd654cf4a091a3635671a3f8196a2807aaa12a50cd627cb67009dd513c71e55"
     },
     {
       "path": "scripts/benchmark_af_cdmo_real_v13.py",
@@ -129,13 +194,28 @@
     },
     {
       "path": "scripts/build_public_release.py",
-      "bytes": 6171,
-      "sha256": "e64c3370f1247879f47b3e172c35403f335daf4a24cb9a8e66d6af22312a7b47"
+      "bytes": 10685,
+      "sha256": "143afd76492043b2b2d6e8ef8b35e129cfcd95b76aa9836dcb47bed54dee801f"
+    },
+    {
+      "path": "scripts/core_external_replication.py",
+      "bytes": 21123,
+      "sha256": "78d31db1314f3c594dc411465a8195d547ab941add2eff9a7754615ce5aa797e"
     },
     {
       "path": "scripts/cqdm_utils.py",
       "bytes": 4574,
       "sha256": "0aa58a199ce33d734f35f2bc089a285b8452dda183495294a63b308eee9459c1"
+    },
+    {
+      "path": "scripts/download_jao_core_external_replication.py",
+      "bytes": 17818,
+      "sha256": "e7e1f55336701eb32e41f07e8dc545bfdc8ab99b77e9b9bc71bf46832f47e066"
+    },
+    {
+      "path": "scripts/evaluate_af_cdmo_physical_ram_sensitivity_v15.py",
+      "bytes": 18493,
+      "sha256": "6e3a7e756fbdc26152f63deae6009e6f44ea2c52398cded04f0b410d841858a0"
     },
     {
       "path": "scripts/multizone_factorial_controls_v10.py",
@@ -148,9 +228,24 @@
       "sha256": "cd7c2306f281fee981e18dfffffddc42c0285183dec7309485a1a6dd699a0c77"
     },
     {
+      "path": "scripts/package_public_release.py",
+      "bytes": 4148,
+      "sha256": "a67f4bb66cace4cf0159bca3107a603ff4940a7b8082d53fdd0008407dd4e32c"
+    },
+    {
       "path": "scripts/run_af_cdmo_real_v14.ps1",
       "bytes": 3173,
       "sha256": "e6ba8f64564c0c472ce32d1675e124835e1608feca3ace85aa02f537deec73a6"
+    },
+    {
+      "path": "scripts/run_core_external_replication.ps1",
+      "bytes": 5329,
+      "sha256": "60b6dbe154db3372b25523171d0001c9a491254341affe00e01dae01d91cd82b"
+    },
+    {
+      "path": "scripts/run_qct_risk_post_confirmation_v5.ps1",
+      "bytes": 3746,
+      "sha256": "98276c11ddcd072a6f1597ded7702d793015083ad8653c99e5036873cd6280f7"
     },
     {
       "path": "scripts/slack_qdm_extension_v11.py",
@@ -158,9 +253,19 @@
       "sha256": "9ce4c5964145d3aad252228250257bf60f6ae1ffc6a16365d1914837c92cf56f"
     },
     {
+      "path": "scripts/summarize_af_cdmo_core_external.py",
+      "bytes": 6636,
+      "sha256": "2d1043bb38d3808bc41822a25173dbee56eb8acdae03ee25a795aaaa9fdc402b"
+    },
+    {
+      "path": "scripts/summarize_af_cdmo_presentation_stress_v15.py",
+      "bytes": 7446,
+      "sha256": "40c3dfbb293e240cc874b73dd97852ce31a3e5ad796966ee85c7d8a04170ddf6"
+    },
+    {
       "path": "scripts/verify_release_manifest.py",
-      "bytes": 2799,
-      "sha256": "f1b28a31fbb58d2b81dc2a275bd78a3c218d4ea1a0b7cf912a5bbd4b8561b1cd"
+      "bytes": 5446,
+      "sha256": "07ff58aa0afa3a13b8198f9911deeb2cef9aa3278ea7e7be66eeb5e6a5fa2085"
     },
     {
       "path": "SECURITY.md",
@@ -171,6 +276,16 @@
       "path": "tests/test_af_cdmo_extension_v12.py",
       "bytes": 11143,
       "sha256": "3815bd1705406068fca8d34cd07f2740ae9bd4c25979df8613333b55c5b756c4"
+    },
+    {
+      "path": "tests/test_af_cdmo_numerical_acceptance.py",
+      "bytes": 4163,
+      "sha256": "a2f3fd0026930259c6ca0b49ce26c999a1d821c953b0a03821b6ad6ddea55f70"
+    },
+    {
+      "path": "tests/test_af_cdmo_physical_ram_sensitivity_v15.py",
+      "bytes": 1616,
+      "sha256": "29177e48dc09c4df1dc693fbeabeb51a0799ad59c51c8b34f074e9bdf35b7ef6"
     },
     {
       "path": "tests/test_af_cdmo_real_calendar_bootstrap_v14.py",
@@ -201,6 +316,26 @@
       "path": "tests/test_benchmark_af_cdmo_real_v13.py",
       "bytes": 1164,
       "sha256": "073adbfe8c74cd70c8d9338645d77250ec135de5651347034c826b4b452a1a59"
+    },
+    {
+      "path": "tests/test_core_external_readiness.py",
+      "bytes": 4535,
+      "sha256": "14f559e165ea238e961c9b45093fc711547df818b097ae072162bd77d941317f"
+    },
+    {
+      "path": "tests/test_core_external_replication.py",
+      "bytes": 10981,
+      "sha256": "abb98a730aa24906fd7f313f714faeae923b4237ad5d0867fe2b4845aa392cd1"
+    },
+    {
+      "path": "tests/test_qct_risk_confirmation_v5.py",
+      "bytes": 14827,
+      "sha256": "4eef9970ed7068290b250ec87437c6beb955788abc832c71305c91a0ddda1af9"
+    },
+    {
+      "path": "tests/test_release_manifest.py",
+      "bytes": 6393,
+      "sha256": "d7a08f532e75cbbaa43b45979fdf31279bbf2a2bf74ebdc4193c965c7458b28c"
     }
   ]
 }

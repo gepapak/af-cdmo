@@ -188,11 +188,31 @@ class AffineFeasibleGeometry:
             raise GeometryError("Equality-basis transform has incompatible width")
         if np.linalg.matrix_rank(change) < self.equality_matrix.shape[0]:
             raise GeometryError("Equality-basis transform must have full column rank")
-        return AffineFeasibleGeometry.from_equalities(
+        equivalent = AffineFeasibleGeometry.from_equalities(
             change @ self.equality_matrix,
             change @ self.equality_rhs,
             consistency_tolerance=self.consistency_tolerance,
         )
+        # Full column rank is an exact-arithmetic condition.  A numerically
+        # resolved row map must also preserve the geometry actually computed.
+        geometry_tolerance = max(
+            self.consistency_tolerance,
+            100.0 * np.finfo(np.float64).eps * self.ambient_dimension,
+        )
+        point_scale = max(1.0, float(np.linalg.norm(self.base_point)))
+        if (
+            equivalent.rank != self.rank
+            or np.linalg.norm(
+                equivalent.tangent_projector - self.tangent_projector, ord=2
+            ) > geometry_tolerance
+            or np.linalg.norm(equivalent.base_point - self.base_point)
+            > geometry_tolerance * point_scale
+        ):
+            raise GeometryError(
+                "Equality-basis rewrite does not preserve the numerically "
+                "resolved affine geometry"
+            )
+        return equivalent
 
 
 @dataclass(frozen=True)
@@ -252,7 +272,12 @@ def canonicalize_certificate(
         raise GeometryError("Certificate normals have the wrong ambient dimension")
     if matrix.shape[0] != len(bounds) or len(bounds) != len(dual):
         raise GeometryError("Certificate row arrays must have equal lengths")
-    if norm_tolerance <= 0.0 or dual_tolerance < 0.0:
+    if (
+        not np.isfinite(norm_tolerance)
+        or not np.isfinite(dual_tolerance)
+        or norm_tolerance <= 0.0
+        or dual_tolerance < 0.0
+    ):
         raise ValueError("Tolerances must be non-negative with norm_tolerance > 0")
     if np.any(dual < -dual_tolerance):
         raise GeometryError("Inequality multipliers must be non-negative")
@@ -285,17 +310,46 @@ def canonicalize_certificate(
     projected = geometry.project(active_normals)
     effective_rhs = active_rhs - active_normals @ geometry.base_point
     norms = np.linalg.norm(projected, axis=1)
-    degenerate = norms <= norm_tolerance
+    ambient_norms = np.linalg.norm(active_normals, axis=1)
+    if (
+        not np.isfinite(projected).all()
+        or not np.isfinite(effective_rhs).all()
+        or not np.isfinite(norms).all()
+        or not np.isfinite(ambient_norms).all()
+    ):
+        raise GeometryError("Certificate projection produced non-finite values")
+    # An enormous equality gauge can destroy a small tangent component before
+    # normalization.  A nonzero computed norm alone cannot detect that loss.
+    # This conservative roundoff-resolution floor is an acceptance guard,
+    # not a claim of a uniform error bound for arbitrary presentations.
+    resolution_floor = (
+        32.0 * np.finfo(np.float64).eps * geometry.ambient_dimension * ambient_norms
+    )
+    degenerate = norms <= np.maximum(norm_tolerance, resolution_floor)
     if np.any(degenerate):
         rows = active[degenerate].tolist()
         raise DegenerateConstraintError(
-            "Positive-dual rows are constant on the feasible manifold; an explicit "
-            f"constant-atom branch is required for rows {rows}"
+            "Positive-dual rows are constant on the feasible manifold or their "
+            f"projected normals are numerically unresolved for rows {rows}"
         )
+    tangent_residual = np.linalg.norm(
+        projected @ geometry.rowspace_projector, axis=1
+    )
+    tangent_tolerance = max(
+        1.0e-10, 100.0 * np.finfo(np.float64).eps * geometry.ambient_dimension
+    )
+    if np.any(tangent_residual > tangent_tolerance * norms):
+        raise GeometryError("Projected certificate normals failed the tangent check")
 
     directions = projected / norms[:, None]
     normalized_rhs = effective_rhs / norms
+    if not np.isfinite(directions).all() or not np.isfinite(normalized_rhs).all():
+        raise GeometryError("Normalized certificate atoms must remain finite")
     masses = active_dual * norms
+    if not np.isfinite(masses).all() or np.any(masses <= 0.0):
+        raise GeometryError(
+            "Every retained canonical dual mass must be finite and positive"
+        )
     total_mass = float(masses.sum())
     if not np.isfinite(total_mass) or total_mass <= 0.0:
         raise GeometryError("Canonical dual mass must be finite and positive")

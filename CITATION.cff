@@ -7,13 +7,13 @@ authors:
     given-names: "Georgios"
   - family-names: "Liu"
     given-names: "Xiufeng"
-version: 0.1.0
-date-released: 2026-09-29
+version: 0.2.0
+date-released: 2026-10-03
 license: Apache-2.0
 abstract: >-
-  Research software for learning representation-safe feasible cotangent
-  representatives from solved Nordic flow-based market certificates under
-  registered economically equivalent certificate rewrites.
+  Research software for representation-safe physical-zone analytics from
+  solved Nordic and Core flow-based market certificates under a registered family of
+  economically null certificate rewrites.
 keywords:
   - electricity markets
   - flow-based market coupling

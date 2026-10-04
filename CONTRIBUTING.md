@@ -18,8 +18,16 @@ contracts of this repository.
 python -m pip install -e ".[test]"
 python -m pytest tests -q
 python scripts\build_public_release.py --force
-python public_release\af_cdmo_code_only\scripts\verify_release_manifest.py
+python public_release\af_cdmo_code_only\scripts\verify_release_manifest.py --strict
+python scripts\package_public_release.py
 ```
+
+The generated folder and ZIP contain only the release allowlist. Rebuild and
+sync the manifest after changing a public source file; CI verifies the manifest
+before installing dependencies. In a public checkout, the builder uses the
+existing `README.md` as its README source. Historical Nordic and QCT guards
+require the authorized prerequisite artifacts documented in the READMEs;
+source market records alone do not recreate every frozen audit reference.
 
 Changes to the quotient, projection, rewrite registry, or theorem assumptions
 also require updating the relevant theorem note and an independent
@@ -28,5 +36,6 @@ mathematical review before those changes are used in a manuscript claim.
 ## Reporting results
 
 Report all registered seeds and controls. Do not select presentations, dates,
-or seeds after seeing outcomes. Report ties and null results faithfully, and do
+or seeds after seeing outcomes. Report unresolved comparisons and null results
+faithfully, and do
 not describe `lastModifiedOn` as definitive first-publication provenance.
