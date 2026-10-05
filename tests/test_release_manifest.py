@@ -43,7 +43,7 @@ def test_manifest_detects_content_tampering(tmp_path: Path) -> None:
         verify_release(tmp_path)
 
 
-@pytest.mark.parametrize("relative", ["build/records.npz", "dist/weights.pt", "__pycache__/records.npz", "unexpected.pyc"])
+@pytest.mark.parametrize("relative", ["build/records.npz", "dist/weights.pt", "__pycache__/records.npz", "unexpected.pyc", "__pycache__/weights.joblib", "__pycache__/weights.pkl", "__pycache__/weights.pickle"])
 def test_manifest_rejects_hidden_unexpected_outputs(tmp_path: Path, relative: str) -> None:
     _release(tmp_path)
     path = tmp_path / relative
@@ -63,7 +63,7 @@ def test_runtime_caches_are_accepted_only_outside_strict_verification(tmp_path: 
         verify_release(tmp_path, strict=True)
 
 
-@pytest.mark.parametrize("relative", ["../README.md", "/README.md", "C:/README.md", "scripts\\example.py", "records.npz"])
+@pytest.mark.parametrize("relative", ["../README.md", "/README.md", "C:/README.md", "scripts\\example.py", "records.npz", "weights.joblib", "weights.pkl", "weights.pickle"])
 def test_manifest_rejects_unsafe_or_restricted_entries(tmp_path: Path, relative: str) -> None:
     manifest = _release(tmp_path)
     manifest["files"][0]["path"] = relative
@@ -114,6 +114,8 @@ def test_builder_supports_a_public_checkout_and_tracks_the_manifest(tmp_path: Pa
     ignores = (output / ".gitignore").read_text(encoding="utf-8").splitlines()
     assert "!release_manifest.json" in ignores
     assert ".venv/" in ignores
+    assert "private/" in ignores
+    assert {"*.joblib", "*.pkl", "*.pickle"} <= set(ignores)
 
 
 def test_package_preserves_git_and_omits_runtime_caches_from_zip(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:

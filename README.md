@@ -165,6 +165,30 @@ boosting. Reproduction of its frozen confirmation requires the authorized
 market inputs and the matching frozen development artifact described in
 `af_cdmo_probabilistic_headroom/README.md`.
 
+### Secondary analyses added on 5 October 2026
+
+[SECONDARY_AUDIT_REPRODUCTION.md](SECONDARY_AUDIT_REPRODUCTION.md) describes
+portable auditors for review workload and retained risk, the analytic-field/mass
+versus full-certificate HGB diagnostic, and the already examined later temporal
+cohort. Each accepts explicit paths to authorized private inputs. The package
+includes their source and synthetic tests; provider data, cached probabilities,
+models, and execution outputs are excluded.
+
+These analyses are disclosed post-confirmation diagnostics. Additional
+certificate information can help risk estimation without establishing neural
+necessity. The later comparison favors the invariant tree control, and structural
+invariance does not certify temporal calibration. The review scenario withholds
+price labels and assumes valid certificate inputs; an invalid or missing
+certificate requires abstention. Natural equivalent-rewrite frequency and
+prospective analyst benefit remain unmeasured.
+
+[REGIONAL_REFERENCE_CASE.md](REGIONAL_REFERENCE_CASE.md) documents the observed
+Nordic reference mechanism and optional regional geometry adapter. The original
+rank-five experiment does not cover that regional change. The declared rank-six
+adapter emits 36 within-area queries and rejects nine cross-area queries; its
+frozen-checkpoint test uses inputs outside the original training geometry and
+makes no accuracy claim.
+
 ## Release integrity
 
 `release_manifest.json` records the byte length and SHA-256 digest of every

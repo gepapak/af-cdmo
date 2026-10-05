@@ -17,7 +17,7 @@ IGNORED_DIRECTORY_NAMES = {
     "venv",
 }
 IGNORED_FILE_SUFFIXES = {".pyc", ".pyo"}
-FORBIDDEN_SUFFIXES = {".csv", ".gz", ".parquet", ".npz", ".pt", ".pth", ".ckpt", ".log", ".pid"}
+FORBIDDEN_SUFFIXES = {".csv", ".gz", ".parquet", ".npz", ".pt", ".pth", ".ckpt", ".joblib", ".pkl", ".pickle", ".log", ".pid"}
 RELEASE_FLAGS = (
     "raw_market_data_included",
     "trained_weights_included",

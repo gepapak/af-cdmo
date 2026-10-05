@@ -9,6 +9,10 @@ dist/
 .env
 .env.*
 jao_authorization_private/
+private/
+*.joblib
+*.pkl
+*.pickle
 official_jao_dual_measure/
 official_entsoe_nordic_day_ahead/
 official_post_golive_market/
